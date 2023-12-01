@@ -41,7 +41,7 @@ async def save_group(bot, message):
                     InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                     InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                  ],[
-                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/KUSHALHK")
+                    InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/unknown_0501")
                   ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await message.reply_text(
@@ -64,7 +64,7 @@ async def save_group(bot, message):
                                                                            InlineKeyboardButton('Sᴜᴘᴘᴏʀᴛ Gʀᴏᴜᴘ', url=GRP_LNK),
                                                                            InlineKeyboardButton('Uᴘᴅᴀᴛᴇs Cʜᴀɴɴᴇʟ', url=CHNL_LNK)
                                                                         ],[
-                                                                           InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/KUSHALHK")
+                                                                           InlineKeyboardButton("Bᴏᴛ Oᴡɴᴇʀ", url="t.me/unknown_0501")
                                                                          ]]
                                                  ),
                                                  parse_mode=enums.ParseMode.HTML
@@ -89,15 +89,15 @@ async def leave_a_chat(bot, message):
         chat = chat
     try:
         buttons = [[
-            InlineKeyboardButton('Support Group',url="https://t.me/TG_SUPPORT_GROUP"),
-            InlineKeyboardButton('Owner', url="https://t.me/KUSHALHK")
+            InlineKeyboardButton('Support Group',url="https://t.me/requestyourmoviehere"),
+            InlineKeyboardButton('Owner', url="https://t.me/unknown_0501")
         ],[
             InlineKeyboardButton('Use Me Here', url=f'https://t.me/{SUPPORT_CHAT}')
         ]]
         reply_markup=InlineKeyboardMarkup(buttons)
         await bot.send_message(
             chat_id=chat,
-            text='<b>Hello Friends, \nMy admin has told me to leave from group, so i go! If you wanna add me again contact my Support Group or My Owner</b>',
+            text='<b>Hello Friends, \nMy admin has told me to leave from group, so i go! If you wanna add me again contact My Owner</b>',
             reply_markup=reply_markup,
         )
 
@@ -211,7 +211,7 @@ async def ban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("This is an invalid user, make sure ia have met him before.")
+        return await message.reply("This is an invalid user, make sure i have met him before.")
     except IndexError:
         return await message.reply("This might be a channel, make sure its a user.")
     except Exception as e:
@@ -244,7 +244,7 @@ async def unban_a_user(bot, message):
     try:
         k = await bot.get_users(chat)
     except PeerIdInvalid:
-        return await message.reply("This is an invalid user, make sure ia have met him before.")
+        return await message.reply("This is an invalid user, make sure i have met him before.")
     except IndexError:
         return await message.reply("Thismight be a channel, make sure its a user.")
     except Exception as e:
