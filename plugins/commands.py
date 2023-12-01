@@ -103,7 +103,7 @@ async def start(client, message):
                     InlineKeyboardButton('👾 Aʙᴏᴜᴛ', callback_data='about')
                 ],[
                     InlineKeyboardButton('🛡️ Backup Channel🛡️', url=CHNL_LNK)
-                  ]]t
+                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)      
         await message.reply_photo(
             photo=random.choice(PICS),
