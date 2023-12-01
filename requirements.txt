@@ -55,6 +55,7 @@ apscheduler
 pyshorteners
 pyromod
 colorama
+asyncio
 
 
 
